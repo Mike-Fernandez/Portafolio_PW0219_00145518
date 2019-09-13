@@ -1,0 +1,22 @@
+$color-primario: tomato;
+$color-segundario: orange;
+
+
+.container{
+    background-color: $color-primario;
+    .btn{
+        background-color: $color-segundario;
+    }
+    &:hover{
+        background-color: $color-segundario;
+    }
+}
+
+@mixin set-dimensions($width, $height){
+    width: $width;
+    height: $height;
+}
+
+body{
+    @include set-dimensions(50%, 100%);
+}
