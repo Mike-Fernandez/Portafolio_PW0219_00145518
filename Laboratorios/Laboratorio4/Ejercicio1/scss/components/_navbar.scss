@@ -1,3 +1,7 @@
+$color-white: white;
+$color-purple: purple;
+$color-blue:    #366cf2;
+
 nav{
     display: flex;
     flex-flow: row wrap;
@@ -7,18 +11,13 @@ nav{
         padding: 0.8em;
         border-radius: 0.5em;
         color: $color-white;
-        background: $color-white;
-/*        
+        
         .a{
             background-color: $color-purple;
         }
 
         .b{
             background-color: $color-blue;
-        }*/
+        }
     }
 }
-
-$color-white: white;
-$color-purple: purple;
-$color-blue:    #366cf2;
