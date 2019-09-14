@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.Area{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 40px 1fr 30px;
+}
+
+.navbar{
+    background-color: azure;
+    height: auto;
+    grid-column: 2;
+    position: static;
+}
+
+.left{
+    background-color: cyan;
+    grid-row: 1/span 2;
+    position: static;
+}
+
+.content{
+    background-color: blue;
+}
+
+.footer{
+    background-color: blueviolet;
+    grid-column: span 2;
+    grid-row: 3;
+    position: static;
+    height: 20px;
+    width:100%;
+    bottom: 0;
+}
