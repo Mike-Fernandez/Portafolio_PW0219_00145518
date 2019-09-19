@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    margin: 0%;
 }
 
 .Area{
@@ -12,28 +13,34 @@ html, body{
 }
 
 .navbar{
-    background-color: azure;
-    height: auto;
+    background-color: rgb(94, 13, 94);
     grid-column: 2;
+    grid-row: 1;
     position: static;
 }
 
 .left{
     background-color: cyan;
-    grid-row: 1/span 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     position: static;
 }
 
 .content{
     background-color: blue;
+    overflow: scroll;
+    grid-row: 2;
+    grid-column: 2;
+    width: 100%;
 }
 
-.footer{
+footer{
     background-color: blueviolet;
     grid-column: span 2;
     grid-row: 3;
     position: static;
-    height: 20px;
+    height: auto;
     width:100%;
-    bottom: 0;
 }
