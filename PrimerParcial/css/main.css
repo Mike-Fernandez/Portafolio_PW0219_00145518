@@ -301,11 +301,16 @@ footer .social-links {
         margin-top: 1em;
     }
 
-
-
-
     /*TODO: FALTA CSS */
-} 
+
+    #menu a:hover{
+        color: red;
+    }
+
+    .container > h2{
+        font-size: 2rem;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -342,13 +347,6 @@ footer .social-links {
            width: 12rem;
        }
 
-       .container > h2{
-           font-size: 2rem;
-       }
-
-       #menu a:hover{
-           color: red;
-       }
 }
 
 @media only screen and (min-width: 1440px) {
