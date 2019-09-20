@@ -323,6 +323,7 @@ footer .social-links {
         height:auto;
         display: flex;
         margin-top: 1em;
+        padding: 0;
     }
 
     #menu a:hover{
@@ -337,38 +338,38 @@ footer .social-links {
 /*Personalizando estilo para desktop*/
 @media only screen and (min-width: 1024px) {
 
-       .about > .container{
-           display: grid;
-           grid-template: 20% 80%/50% 50%;
-       }
+    .about > .container{
+        display: grid;
+        grid-template: 20% 80%/50% 50%;
+    }
 
-       .bio-info{
-           display: inherit;
-           grid-column-start: 1;
-           grid-column-end: 1;
-           align-content: center;
-       }
+    .bio-info{
+        display: inherit;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        align-content: center;
+    }
 
-       .bio-info > img{
+    .bio-info > img{
         margin: 0% 0% 0% 25%;
-       }
+    }
 
-       .contact{
-           display: inherit;
-           grid-column-start: 2;
-           grid-column-end: 2;
-       }
+    .contact{
+        display: inherit;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
 
-       .about > .container h2{
-           grid-row-start: 1;
-           grid-row-end: 1;
-           grid-column-start: 1;
-           grid-column-end: 3;
-       }
+    .about > .container h2{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
        
-       .contact-form > input:last-of-type{
-           width: 12rem;
-       }
+    .contact-form > input:last-of-type{
+        width: 12rem;
+    }
 
 }
 
