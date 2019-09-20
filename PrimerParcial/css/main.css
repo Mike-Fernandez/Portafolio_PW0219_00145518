@@ -260,6 +260,28 @@ footer .social-links {
     
 }
 
+@media only screen and (min-width: 414px){
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2.5rem;
+        padding: 0.5rem;
+        flex: 1 0 300px;
+    }
+
+    .contact{
+        padding: 3rem;
+    }
+    
+}
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
@@ -267,6 +289,7 @@ footer .social-links {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
     }
     
@@ -274,6 +297,7 @@ footer .social-links {
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
+        padding: 0;
         flex: 1 0 300px;
     }
 
@@ -301,8 +325,6 @@ footer .social-links {
         margin-top: 1em;
     }
 
-    /*TODO: FALTA CSS */
-
     #menu a:hover{
         color: red;
     }
@@ -312,6 +334,7 @@ footer .social-links {
     }
 }
 
+/*Personalizando estilo para desktop*/
 @media only screen and (min-width: 1024px) {
 
        .about > .container{
