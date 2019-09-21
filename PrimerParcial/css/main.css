@@ -279,6 +279,26 @@ footer .social-links {
     .contact{
         padding: 3rem;
     }
+
+    .big-hero > .container ul{
+        margin-top: 0;
+        align-content: space-between;
+    }
+
+    .big-hero a > i{
+/*        font-size: 5rem;*/
+        padding-bottom: 5rem;
+        padding-top: 0;
+    }
+
+    .fab{
+        font-size: 5rem;
+    }
+
+    .fas{
+        font-size: 5rem;
+        color: #0AC693;
+    }
     
 }
 
