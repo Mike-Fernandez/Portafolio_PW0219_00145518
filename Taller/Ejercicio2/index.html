@@ -16,7 +16,6 @@
                         Registro de actividades por día.
                     </h1>
                     
-                    <form action="" name="journal">
                         <div class="form-group">
                             <label for="event" class=" col-form-label">Eventos en el día (separados por comas): </label><br>
                             <input class="form-control" type="text" name="evento" id="event_field">
@@ -24,25 +23,23 @@
 
                         <div class="form-group">
                             <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="late_switch">
-                                <label class="custom-control-label" for="late_switch">Sucedió algún accidente?</label>
+                                <input type="checkbox" class="custom-control-input" id="accident_switch">
+                                <label class="custom-control-label" for="accident_switch">Sucedió algún accidente?</label>
                             </div>
                         </div>
                     
                         <div class="form-group">
                             <input type="submit" class="btn btn-danger" id="submit_btn" value="Ingresar"></input>
                         </div>
-                    </form>
                 </div>
             <hr>
             <section>
                 <table class="table table-hover">
                     <thead>
                         <tr class="table-dark">
-                            <th scope="col">Carnet</th>
-                            <th scope="col">Horario de laboratorio</th>
-                            <th scope="col">Hora de ingreso</th>
-                            <th scope="col">Tarde?</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Eventos</th>
+                            <th scope="col">Accidente</th>
                         </tr>
                     </thead>
                     <tbody id="table_body">
