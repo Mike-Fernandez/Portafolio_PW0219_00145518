@@ -10,9 +10,11 @@ function addEvent(acciones, accidente, tbody){
     let date = new Date();
 
    var actions = (acciones) => {
+       let string = "";
         for(let i = 0; i < acciones.length; i++){
-            return acciones[i].concat(" ");
+            string = string + acciones[i].concat("\n");
         }
+        return string;
     }
 
     newDay.innerHTML = `<td>${date.toLocaleString()}</td>
