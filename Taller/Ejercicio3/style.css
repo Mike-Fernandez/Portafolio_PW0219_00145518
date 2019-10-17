@@ -23,11 +23,14 @@ header{
     display: flex;
     height: 100vh;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-image: url(images/Ale_Rav.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     color: red;
 }
 
@@ -55,13 +58,23 @@ header{
 }
 
 .entry{
-    margin: 1em;
+  width: 80%;
+  margin: 5px auto 2px;
+  border: 1px solid black;
+  background-color: #263238;
+  color: white;
+  box-shadow: 4px 4px 7px #888888;
+  padding: 10px;
+  border-left: 10px solid #1976d2;
+  text-align: center;
 }
 
-.entry h1{
-    text-align: center;
+.entry strong{
+    color:  #ff7203 ;
+    font-size: 2.05rem;
 }
 
 .entry p{
     text-align: justify;
 }
+
