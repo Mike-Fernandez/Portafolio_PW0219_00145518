@@ -8,11 +8,32 @@ var parseLateSwitch = value => {
 function addStudent(carnet, schedule, late, tbody){
     let newRow = document.createElement("tr");
     let date = new Date();
+    let idCounter;
 
     newRow.innerHTML = `<td><b>${carnet}</b></td>
                         <td>${schedule}</td>
                         <td>${date.toLocaleString()}</td>
                         <td>${late}</td>`;
+
+    let cellContainer = document.createElement("td");
+    let newBtn = document.createElement("button");
+
+    newBtn.classList.add("btn");
+    newBtn.classList.add("btn-danger");
+    newBtn.innerText = "Drop";
+    newBtn.value = idCounter;
+
+    cellContainer.appendChild(newBtn);
+    newRow.appendChild(cellContainer);
+
+    newBtn.addEventListener("click", value => {
+        let idElement = event.srcElement.value;
+        let elementNode = document.querySelector(`tr > td > button[value = '${idElement}']`).parentElement.parentElement;
+
+        tbody.removeChild(elementNode);
+    });
+    idCounter++;
+
     tbody.appendChild(newRow);
 }
 
