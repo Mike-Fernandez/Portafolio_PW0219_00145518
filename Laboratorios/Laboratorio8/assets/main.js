@@ -26,9 +26,33 @@ function addStudent(carnet, schedule, late, tbody){
     cellContainer.appendChild(newBtn);
     newRow.appendChild(cellContainer);
 
+    let newCell = document.createElement("td");
+    let newText = document.createElement("input");
+
+    newText.classList.add("form-control");
+    
+    newCell.appendChild(newText);
+    newRow.appendChild(newCell);
+
+    newText.addEventListener("keyup",function(){
+        let elementId = event.srcElement.value;
+
+/*        if(carnetRegex.test(elementId)){
+            if(newRow.firstChild.firstChild.value)
+        }*/
+//        let selectedNode = document.querySelector(`tr > td > input[value = '${elementId}']`).parentElement.parentElement;
+//        console.log(elementId);
+
+//        if(event.srcElement.text == selectedNode.firstChild.firstChild.text){
+//            console.log("success");
+//        }
+
+    });
+
     newBtn.addEventListener("click", value => {
         let idElement = event.srcElement.value;
         let elementNode = document.querySelector(`tr > td > button[value = '${idElement}']`).parentElement.parentElement;
+        console.log(idElement);
 
         tbody.removeChild(elementNode);
     });
